@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookAI: Revolutionary AI-Powered Book Generation | Create Professional Books in Minutes</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="BookAI harnesses cutting-edge artificial intelligence to generate high-quality, professional books in minutes. Revolutionize your writing process with our AI-powered book creation tool. Experience the future of authorship today.">
+    <meta name="keywords" content="AI book writing, artificial intelligence books, automated book generation, BookAI, AI writing tool, instant book creation, digital authorship, AI-assisted writing, smart book compiler, machine learning literature">
+    <meta name="author" content="BookAI">
+    <meta name="google-site-verification" content="BR_9JAf8lN8Sv0QVG7AAn1Rhu097krlgboMBA-k-Ydk" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3035593618466231"
+     crossorigin="anonymous"></script>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.tryBookAI.com/">
+    <meta property="og:title" content="BookAI - Create Professional Books with AI in Minutes | The Future of Writing">
+    <meta property="og:description" content="Generate high-quality, market-ready books using state-of-the-art artificial intelligence. BookAI revolutionizes the writing process, empowering authors and content creators with advanced AI technology.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/Adarshagupta/BookAI/main/book.png">
+    <meta property="og:image:alt" content="AI-generated book cover showcasing BookAI's capabilities">
+    <meta property="og:site_name" content="BookAI">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@BookAI_official">
+    <meta name="twitter:creator" content="@BookAI_official">
+    <meta name="twitter:url" content="https://www.tryBookAI.com/">
+    <meta name="twitter:title" content="BookAI - Revolutionary AI-Powered Book Generation | Write Smarter, Not Harder">
+    <meta name="twitter:description" content="Create professional-quality books in minutes with BookAI's advanced artificial intelligence writing technology. Transform your ideas into fully-fledged books effortlessly.">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/Adarshagupta/BookAI/main/book.png">
+    <meta name="twitter:image:alt" content="Stunning AI-generated book cover demonstrating BookAI's capabilities">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://raw.githubusercontent.com/Adarshagupta/BookAI/main/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://raw.githubusercontent.com/Adarshagupta/BookAI/main/logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://raw.githubusercontent.com/Adarshagupta/BookAI/main/book.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.tryBookAI.com/">
+    
+    <!-- Alternate Language Pages -->
+    <link rel="alternate" hreflang="es" href="https://www.tryBookAI.com/es/">
+    <link rel="alternate" hreflang="fr" href="https://www.tryBookAI.com/fr/">
+    <link rel="alternate" hreflang="de" href="https://www.tryBookAI.com/de/">
+    <link rel="alternate" hreflang="x-default" href="https://www.tryBookAI.com/">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" as="script">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style">
+    <link rel="preload" href="/fonts/custom-font.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/main.min.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "BookAI",
+      "url": "https://www.tryBookAI.com",
+      "description": "AI-powered book generation tool that creates professional-quality books in minutes",
+      "applicationCategory": "WritingSoftware",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "19.99",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1024"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.tryBookAI.com/search?q={search_term_string}" 
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <!-- Google Analytics (replace UA-XXXXX-Y with your actual tracking ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-XXXXX-Y');
+    </script>
+    <!-- Social Media Integration -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-YOUR-ADDTHIS-ID"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        :root {
+            --primary-bg: linear-gradient(135deg, #1e0533, #110a1f);
+            --accent-color: #8a2be2;
+            --text-color: #ffffff;
+            --text-secondary: #b3b3b3;
+            --gradient-1: linear-gradient(45deg, #ff6b6b, #feca57);
+            --gradient-2: linear-gradient(45deg, #8a2be2, #4b0082);
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            background: var(--primary-bg);
+            color: var(--text-color);
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-icon {
+            width: 30px;
+            height: 30px;
+            background: var(--gradient-1);
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 300;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        .button {
+            background: var(--gradient-1);
+            color: var(--text-color);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            transition: transform 0.3s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+        }
+        #three-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .hero {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 0 0px 20px;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .highlight {
+            background: var(--gradient-2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+        }
+
+        .highlight::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            height: 3px;
+            background: var(--gradient-1);
+        }
+
+        .subtitle {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            color: var(--text-secondary);
+        }
+
+        .cta {
+            display: inline-block;
+            background: var(--gradient-1);
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: transform 0.3s ease;
+        }
+
+        .cta:hover {
+            transform: translateY(-3px);
+        }
+
+        .main-content {
+            margin-top: 80px;
+            position: relative;
+        }
+
+        .ai-demo {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ai-demo img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .ai-demo img:hover {
+            transform: scale(1.05);
+        }
+
+        .floating-ui {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            transition: opacity 0.3s ease;
+        }
+
+        .floating-ui.top-left {
+            top: 20px;
+            left: 20px;
+        }
+
+        .floating-ui.bottom-right {
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .floating-icon {
+            width: 24px;
+            height: 24px;
+            background: var(--gradient-1);
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 80px;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            text-align: center;
+            flex-basis: calc(25% - 20px);
+            margin-bottom: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-2);
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: var(--text-color);
+        }
+
+        .how-it-works, .roadmap {
+            margin-top: 80px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 40px;
+        }
+
+        .step-container, .roadmap-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .step, .roadmap-item {
+            flex-basis: calc(50% - 20px);
+            margin-bottom: 40px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .step-icon, .roadmap-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-1);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: var(--text-color);
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+
+        .step-content, .roadmap-content {
+            flex-grow: 1;
+        }
+
+        .step h3, .roadmap-item h3 {
+            margin-top: 0;
+        }
+
+        .testimonials {
+            margin-top: 80px;
+            text-align: center;
+        }
+
+        .testimonial-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .testimonial {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            flex-basis: calc(50% - 20px);
+            transition: transform 0.3s ease;
+        }
+
+        .testimonial:hover {
+            transform: translateY(-5px);
+        }
+
+        .newsletter {
+            margin-top: 80px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 40px;
+        }
+
+        .newsletter form {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .newsletter input[type="email"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+            width: 60%;
+            max-width: 300px;
+        }
+
+        .newsletter button {
+            background: var(--gradient-1);
+            color: var(--text-color);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .newsletter button:hover {
+            transform: translateY(-3px);
+        }
+
+        .background-particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .particle {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            animation: float 15s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        footer {
+            margin-top: 80px;
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        footer a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: var(--text-color);
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav {
+                margin-top: 20px;
+            }
+
+            nav a {
+                margin: 10px 20px 10px 0;
+            }
+
+            .feature {
+                flex-basis: calc(50% - 20px);
+            }
+
+            .step, .roadmap-item {
+                flex-basis: 100%;
+            }
+
+            .testimonial {
+                flex-basis: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            .feature {
+                flex-basis: 100%;
+            }
+
+            .newsletter input[type="email"] {
+                width: 100%;
+                border-radius: 5px;
+                margin-bottom: 10px;
+            }
+
+            .newsletter button {
+                width: 100%;
+                border-radius: 5px;
+            }
+        }
+              /* Add these new styles for the book samples section */
+              .book-samples {
+            margin-top: 80px;
+            text-align: center;
+        }
+
+        .samples-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .book-sample {
+            flex-basis: calc(33.333% - 40px);
+            margin-bottom: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .book-sample:hover {
+            transform: translateY(-10px);
+        }
+
+        .book-cover {
+            width: 200px;
+            height: 300px;
+            margin: 0 auto 20px;
+            background: var(--gradient-2);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: var(--text-color);
+            font-size: 18px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .book-excerpt {
+            font-style: italic;
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+        }
+
+        .read-more {
+            display: inline-block;
+            margin-top: 10px;
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .read-more:hover {
+            color: var(--text-color);
+        }
+
+        @media (max-width: 768px) {
+            .book-sample {
+                flex-basis: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .book-sample {
+                flex-basis: 100%;
+            }
+        }
+        
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <div id="three-container"></div>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <img src="https://raw.githubusercontent.com/Adarshagupta/BookAI/main/logo.png" width="50px" alt="Logo BookAI">BookAI
+            </div>
+            <nav>
+                <a href="#fonctionnalites">Fonctionnalités</a>
+                <a href="#comment-ca-marche">Comment ça marche</a>
+                <a href="#feuille-de-route">Feuille de route</a>
+                <a href="/playground" class="button">Nouveau compte</a>
+                <a href="/playground" class="button">Connexion</a>
+            </nav>
+        </header>
+  
+        <section class="hero">
+            <h1>Explorez les possibilités de <span class="highlight">l'écriture de livres par IA</span> avec BookAI</h1>
+            <p class="subtitle">Libérez la puissance de l'IA pour créer des livres captivants en quelques minutes. Téléchargez et distribuez où vous voulez. Générez des livres gratuits illimités</p>
+            <a href="/playground" class="cta">Commencer</a>
+        </section>
+  
+        <section class="main-content">
+            <div class="ai-demo">
+                <img src="https://raw.githubusercontent.com/Adarshagupta/BookAI/main/book.png" alt="Générateur de livres IA">
+                <div class="floating-ui top-left">
+                    <div class="floating-icon"></div>
+                    <span>L'IA génère !</span>
+                </div>
+                <div class="floating-ui bottom-right">
+                    <div class="floating-icon"></div>
+                    <span>Chapitre terminé</span>
+                </div>
+            </div>
+        </section>
+  
+        <section id="fonctionnalites" class="features">
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>Écriture assistée par IA</h3>
+                <p>Générez du contenu de haute qualité grâce à une technologie IA avancée.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <h3>Genres personnalisés</h3>
+                <p>Créez des histoires dans n'importe quel genre ou mélangez plusieurs styles.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-download"></i>
+                </div>
+                <h3>Téléchargement instantané</h3>
+                <p>Obtenez votre livre terminé dans divers formats instantanément.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-language"></i>
+                </div>
+                <h3>Multilingue</h3>
+                <p>Générez du contenu dans plusieurs langues sans effort.</p>
+            </div>
+        </section>
+  
+        <section id="comment-ca-marche" class="how-it-works">
+            <h2>Comment ça marche</h2>
+            <div class="step-container">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>Choisissez votre genre</h3>
+                        <p>Sélectionnez parmi une large gamme de genres ou créez un mélange personnalisé.</p>
+                    </div>
+                </div>
+                <div class="step">
+                  <div class="step-icon">
+                      <i class="fas fa-pencil-alt"></i>
+                  </div>
+                  <div class="step-content">
+                      <h3>Fournissez les détails clés</h3>
+                      <p>Entrez les personnages principaux, les points d'intrigue ou les thèmes pour guider l'IA.</p>
+                  </div>
+              </div>
+              <div class="step">
+                  <div class="step-icon">
+                      <i class="fas fa-cogs"></i>
+                  </div>
+                  <div class="step-content">
+                      <h3>Génération par IA</h3>
+                      <p>Notre IA avancée crée votre livre en fonction de vos entrées.</p>
+                  </div>
+              </div>
+              <div class="step">
+                  <div class="step-icon">
+                      <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div class="step-content">
+                      <h3>Révision et téléchargement</h3>
+                      <p>Révisez votre livre généré et téléchargez-le dans le format de votre choix.</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+  
+      <section class="book-samples">
+          <h2>Exemples de livres générés par BookAI</h2>
+          <p>Explorez quelques-uns des livres captivants créés à l'aide de notre technologie IA.</p>
+          <div class="samples-container">
+              <div class="book-sample">
+                  <div class="book-cover">Le Paradoxe Quantique</div>
+                  <h3>Science-fiction</h3>
+                  <p class="book-excerpt">"Alors que le Dr Elara franchissait le portail scintillant, elle savait qu'il n'y avait plus de retour en arrière. Le destin de deux univers reposait maintenant entre ses mains..."</p>
+                  <a href="#" class="read-more">Lire la suite</a>
+              </div>
+              <div class="book-sample">
+                  <div class="book-cover">Murmures dans la Brume</div>
+                  <h3>Mystère</h3>
+                  <p class="book-excerpt">"Le vieux phare se tenait silencieux, son faisceau éteint depuis longtemps. Mais les nuits brumeuses, certains juraient pouvoir encore voir sa lumière fantomatique..."</p>
+                  <a href="#" class="read-more">Lire la suite</a>
+              </div>
+              <div class="book-sample">
+                  <div class="book-cover">Échos de l'Éternité</div>
+                  <h3>Fantasy</h3>
+                  <p class="book-excerpt">"L'ancienne prophétie parlait d'un enfant né avec la lumière des étoiles dans les yeux. Alors que la comète flamboyait dans le ciel, le royaume retenait son souffle..."</p>
+                  <a href="#" class="read-more">Lire la suite</a>
+              </div>
+          </div>
+      </section>
+  
+      <section id="feuille-de-route" class="roadmap">
+          <h2>Feuille de route</h2>
+          <div class="roadmap-container">
+              <div class="roadmap-item">
+                  <div class="roadmap-icon">
+                      <i class="fas fa-user-circle"></i>
+                  </div>
+                  <div class="roadmap-content">
+                      <h3>Développement avancé des personnages</h3>
+                      <p>Outil alimenté par l'IA pour créer des personnages profonds et complexes.</p>
+                  </div>
+              </div>
+              <div class="roadmap-item">
+                  <div class="roadmap-icon">
+                      <i class="fas fa-store"></i>
+                  </div>
+                  <div class="roadmap-content">
+                      <h3>Intégration de plateformes d'e-books</h3>
+                      <p>Publication simplifiée sur les plateformes d'e-books populaires.</p>
+                  </div>
+              </div>
+              <div class="roadmap-item">
+                  <div class="roadmap-icon">
+                      <i class="fas fa-users"></i>
+                  </div>
+                  <div class="roadmap-content">
+                      <h3>Écriture collaborative</h3>
+                      <p>Co-créez des histoires avec d'autres auteurs ou assistants IA.</p>
+                  </div>
+              </div>
+              <div class="roadmap-item">
+                  <div class="roadmap-icon">
+                      <i class="fas fa-paint-brush"></i>
+                  </div>
+                  <div class="roadmap-content">
+                      <h3>Génération de couvertures par IA</h3>
+                      <p>Créez des couvertures de livres spectaculaires avec de l'art généré par IA.</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+  
+      <section class="testimonials">
+          <h2>Ce que disent nos utilisateurs</h2>
+          <div class="testimonial-container">
+              <div class="testimonial">
+                  <p>"BookAI a révolutionné mon processus d'écriture. J'ai terminé mon premier roman en seulement deux semaines !"</p>
+                  <p><strong>- Sarah J., Auteure</strong></p>
+              </div>
+              <div class="testimonial">
+                  <p>"Les idées générées par l'IA m'ont aidé à surmonter le syndrome de la page blanche. C'est comme avoir un co-auteur au bout des doigts."</p>
+                  <p><strong>- Marc T., Écrivain en herbe</strong></p>
+              </div>
+          </div>
+      </section>
+  
+      <section class="newsletter">
+          <h2>Restez informé</h2>
+          <p>Abonnez-vous à notre newsletter pour recevoir les derniers conseils d'écriture IA et les mises à jour de BookAI.</p>
+          <form>
+              <input type="email" placeholder="Entrez votre email" required>
+              <button type="submit">S'abonner</button>
+          </form>
+      </section>
+  
+      <footer>
+          <p>&copy; 2024 BookAI. Tous droits réservés.</p>
+          <div>
+              <a href="#">Conditions d'utilisation</a>
+              <a href="#">Politique de confidentialité</a>
+              <a href="#">Nous contacter</a>
+          </div>
+      </footer>
+    </div>
+    <div class="background-particles">
+        <div class="particle" style="top: 10%; left: 20%;"></div>
+        <div class="particle" style="top: 30%; left: 80%;"></div>
+        <div class="particle" style="top: 70%; left: 50%;"></div>
+        <div class="particle" style="top: 40%; left: 10%;"></div>
+        <div class="particle" style="top: 60%; left: 90%;"></div>
+    </div>
+  </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<script>
+   // Three.js scene setup
+   const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.getElementById('three-container').appendChild(renderer.domElement);
+
+        // Create floating particles
+        const particlesGeometry = new THREE.BufferGeometry();
+        const particlesCount = 1000;
+        const posArray = new Float32Array(particlesCount * 3);
+
+        for (let i = 0; i < particlesCount * 3; i++) {
+            posArray[i] = (Math.random() - 0.5) * 5;
+        }
+
+        particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+
+        const particlesMaterial = new THREE.PointsMaterial({
+            size: 0.005,
+            color: 0xffffff,
+            transparent: true,
+            opacity: 0.8,
+        });
+
+        const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
+        scene.add(particlesMesh);
+
+        camera.position.z = 3;
+
+        // Animation loop
+        function animate() {
+            requestAnimationFrame(animate);
+            particlesMesh.rotation.x += 0.0005;
+            particlesMesh.rotation.y += 0.0005;
+            renderer.render(scene, camera);
+        }
+
+        animate();
+
+        // Resize handler
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+</script>
+</html>
